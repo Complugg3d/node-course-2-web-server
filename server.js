@@ -51,6 +51,12 @@ app.get('/about', (req, res) => {
   });
 });
 
+app.get('/portafolio', (req, res) => {
+  res.render('portafolio.hbs', {
+    pageTitle: 'Portafolio'
+  });
+});
+
 app.get('/bad', (req, res) => {
   res.send({
     errorMessage: 'unable to fullfil the page'
