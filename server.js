@@ -1,7 +1,7 @@
 const express = require('express');
 const hbs = require('hbs');
 const fs = require('fs');
-const port = proccess.env.PORT || 3000;
+const port = process.env.PORT || 3000;
 
 var app = express();
 
@@ -56,8 +56,6 @@ app.get('/bad', (req, res) => {
     errorMessage: 'unable to fullfil the page'
   })
 });
-
-
 
 app.listen(port, () => {
   console.log(`Server is up and running at port ${port}`);
